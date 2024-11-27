@@ -67,13 +67,6 @@ class categoria_gastos (models.Model):
     def __str__(self):
         return self.nombre_g
     
-class ingresos (models.Model):
-    nombre_i = models.CharField(max_length=15)
-    id_usuario = models.ForeignKey(usuarios, on_delete=models.CASCADE)
-    
-    def __str__(self):
-        return self.nombre_i
-    
     
     
     
