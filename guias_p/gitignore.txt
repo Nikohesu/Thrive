@@ -1,0 +1,6 @@
+archivo.txt= ignora un archivo especifico
+*.txt = ignora sengun su terminacion
+!archivo2.txt = eceptua archivo especificos
+cosas/ = ignora una carpeta
+!cosas/algo.png = eceptua un archivo espesifico en una carpeta
+*).txt

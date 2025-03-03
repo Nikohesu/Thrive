@@ -1,0 +1,167 @@
+cd 
+rm
+rmdir
+mkdir
+ls = permite inspeccionar los archivos dentro de una carpeta
+
+git init
+git clone
+git status
+git status -s o --short
+git add
+git commit -m ""
+git commit
+git commit -a = permite subir archovos al repositorio sin pasar por el area de preparacion
+git rm --cached
+git restore = devuelve un archivo del area de preparacion al area local
+git checkout = devuelve un archivo al ultimo estado en el que se subio al area de preparacion.
+git reset --hard = restaura los archivos a su ultimo commit
+git mv (nombre_1) (nombre_2) = permite cambiar los nobres de los archivos desde consola
+git show = permite ver informacion del archivo seleccionadosegun su ultimo commit
+git diff --staged = compara lo que hay en el area de preparacion y el ultimo commit y lo muestra: rojo = version en el commit, verde =version en el area de preparacion
+git log = muestra informacion de los commits realizados
+git log --oneline = resume la informacion de un git log
+git diff (id_commi_1) (id_commit_2) = revisa las diferencias entre dos commits
+git diff --name-only (id_commi_1) (id_commit_2) = muestra solo los nombres de los archivos con diferencias entre commits
+git diff --word-diff (id_commi_1) (id_commit_2) = muestra las diferencias en los archovos requeridos
+git commit --amend = permite recomitiaar el el commit donde se encuentra el head, se deven subir al area de preparacion antes
+git rebase -i head~(numero_de_cpmmits_a_retroceder) = permite mover el head a commits anteriores
+git rebase --continue =trae de vuelta los commits que se atrasaron, pero cambia todos los bash o id
+git reset --soft (bash del commit) = borra el commit seleccionado y devuelve los archivos modificados al area de preparacion
+git reset --soft head~1 = lo mismo que el otro pero el numero de el head va en cuenta regresiva para eliminar commits
+git reset --mixed (bash_commit)
+git reset --hard (bash_commit)
+git branch = muestra las ramas creadas
+git branch (nombre-de-la-nueva-rama) = crea una nueva rama  _uso-del-kebap-case
+git checkout (nombre de la rama a cambiar) = permite cabiar entre ramas pero no es recomendable
+git checkout -b (nombre de una nueva rama) = permite crear una rama y cambiar ala nueva, no recomendado mejor con swith
+git switch (nombre de la rama) = es el recomendado para moverse entre ramas
+git switch -c (nombre de la nueva rama) = crea y nos lleva a una nueva rama
+git branch -d (nombre de rama) = borra una rama seleccionada
+git branch -m (nom-1-de-rama) (nom-2-rama) = permite cambiar el nombre de la rama
+git branch -m (nom-2-de-rama) = si estamos en la rama a la que le queremos cambiar el nombre
+git merge (nombre_de_la _Rama fusionada) = este fusiona ramas, se deve estar en el master o en la rama ala que se le va a fusionar
+git reset (bash_De_commit) = desfusiona la ramas sin  borrarlas
+git log --all = muestra todos los commits de todas las ramas
+git ls-tree =muestra todos los archivos de un commit
+git ls-tree -r = muestra tando archivos como directorios
+git ls-tree -r --name-only (hash) = muetra solo los nombre de directorios y archivos
+git log --oneline --all --graph =muestra lo mimo que un git log pero con un dibujos que representan las acciones en las ramas
+git config --global alias.(nombre del alias) "(Comando)" = permite asignarle un  alias a un comando de git
+git relfog = muestra un registro de todos los lugares por los que a pasa el head, esto nos permite recuperar commits borrados con un reset --hard (id_del_commit a recuperar)
+git push= sube archivos al repositorio
+git pull= fusiona la rama del repositorio al la local, tiene menos control de errores
+git fetch= comprueva si hay cambios en el origin master, ayuda a observar los cambios entre el origin/master y master
+git switch --detach (rama cambio) = cambia a una rama en una forma temporal
+git switch --detach origin/master = pasa a el origin master con una rama teporal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

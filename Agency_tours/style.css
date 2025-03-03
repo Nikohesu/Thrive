@@ -1,0 +1,23 @@
+.container{
+    background-color: #f8f7cc;
+    border-radius: 5px;
+    align-items: center;
+
+
+    
+}
+h4{
+    background-color: rgb(192, 180, 72);
+    color : white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    border-radius: 5px;
+
+}
+select{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
