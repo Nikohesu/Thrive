@@ -1,13 +1,19 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     background-color: #f8f7cc;
     border-radius: 5px;
     align-items: center;
+    width: 50%;
 
 
     
 }
 h4{
-    background-color: rgb(192, 180, 72);
     color : white;
     width: 80%;
     margin-left: 10%;
@@ -16,8 +22,19 @@ h4{
     border-radius: 5px;
 
 }
-select{
+.sep-1{
+    background-color: rgb(192, 180, 72);
+}
+.campo{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+}
+button{
+    margin: 2%;
+    margin-left: 1% ;
+    margin-right: 1% ;
+}
+.text{
+    margin: 2%;
 }
