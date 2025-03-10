@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency-tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Recursos/Mario-64.ico">
+</head>
+<body>
+    <div class="for-rep" id="for-rep">
+        
+        <h2 class="pri-text">Agency tours - Sistema de reservas</h2>
+
+        
+
+        <form class="form f1">
+            <h4 class="sub-titulo sub-t1">Datos de la reserva</h4>
+            <h5 class="ant-camp">Ciudad de destino:</h5>
+            <select class="campo" id="ciudad">
+                <option>Ciudad A</option>
+                <option>Ciudad B</option>
+                <option>Ciudad C</option>
+                <option>Ciudad D</option>
+            </select>
+            <h5 class="ant-camp">Numero de personas:</h5>
+            <input class="campo" type="number" placeholder="numero de personas" id="num-personas">
+            <h5 class="ant-camp">Tipo de pago:</h5>
+            <select class="campo" id="tipo-pago">
+                <option>Efectivo</option>
+                <option>Tarjeta</option>
+            </select>
+            <button type="button"  class="boton cal-res" onclick="cal()">Calcular reserva</button>
+            <button   class="boton limpiar" id="limpiar">Limpiar</button>
+        </form>
+
+        <form class="form f2">
+            <h4 class="sub-titulo sub-t2">Resultados</h4>
+            <h5 class="ant-camp">Valor total:</h5>
+            <input type="text" class="campo" disabled id="valor-t">
+            <h5 class="ant-camp">Descuento:</h5>
+            <input class="campo" type="text" id="descuento" disabled>
+            <h5 class="ant-camp">Valor Neto a pagar:</h5>
+            <input type="text" class="campo" id="valor-n-p" disabled>
+    
+        </form>
+
+
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>

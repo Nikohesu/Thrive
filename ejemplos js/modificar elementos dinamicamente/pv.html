@@ -1,0 +1,9 @@
+<button onclick="agregarDiv()">Agregar Div</button>
+<div id="contenedor"></div>
+
+<script>
+    function agregarDiv() {
+        document.getElementById("contenedor").insertAdjacentHTML("beforeend", 
+            `<div style="background: lightblue; padding: 10px; margin: 5px;">Este es un nuevo div</div>`);
+    }
+</script>

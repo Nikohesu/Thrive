@@ -1,0 +1,10 @@
+<input type="text" id="nombre" placeholder="Escribe tu nombre">
+<button onclick="mostrarNombre()">Enviar</button>
+<p id="resultado"></p>
+
+<script>
+    function mostrarNombre() {
+        let nombre = document.getElementById("nombre").value;
+        document.getElementById("resultado").textContent = "Hola, " + nombre;
+    }
+</script>

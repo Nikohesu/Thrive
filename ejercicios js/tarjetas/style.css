@@ -1,0 +1,46 @@
+.esptar, .esptar-2,.esptar-3{
+    width : 50%;
+    max-width: 400px;
+    text-align: center;
+    margin:auto;
+    border-radius: 25px ;
+    padding: 5%;
+    box-shadow: 10px 10px 50px 2px #000;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    
+
+}
+.esptar{
+    background: linear-gradient(#590c77,rgb(97, 4, 247));
+}
+.esptar-2{
+    background: linear-gradient(#0c4c77,rgb(78, 104, 175));
+
+}
+
+.esptar-3{
+    background: linear-gradient(#77670c,rgb(247, 211, 4));
+}
+.img{
+    background-image: url("https://th.bing.com/th/id/R.1468fe2a51c2c7cfaa15db8e26e05f1a?rik=TYQbP9I4%2bgcjqg&riu=http%3a%2f%2fimg2.wikia.nocookie.net%2f__cb20130827143748%2fphineasandferb%2fimages%2f8%2f8e%2fPhineas_Image_Proposition_5.jpg&ehk=fnU%2fxx5SpS3U%2fuyx0GkqnYpWcV7vahnDb1VAYICYYTM%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    margin : auto;
+    width: 30vw;
+    height: 30vw;
+    box-shadow: 0 0 20px 1px black;
+    margin-bottom: 10px;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px  rgba(255, 255, 255, 0.486);
+}
+.sub-titulo{
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 10px  rgb(255, 255, 255);
+    margin: 0 5px
+}
