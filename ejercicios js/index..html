@@ -16,20 +16,33 @@
 
         <form class="form f1">
             <h4 class="sub-titulo sub-t1">Datos de la reserva</h4>
-            <h5 class="ant-camp">Ciudad de destino:</h5>
-            <select class="campo" id="ciudad">
-                <option>Ciudad A</option>
-                <option>Ciudad B</option>
-                <option>Ciudad C</option>
-                <option>Ciudad D</option>
-            </select>
-            <h5 class="ant-camp">Numero de personas:</h5>
-            <input class="campo" type="number" placeholder="numero de personas" id="num-personas">
-            <h5 class="ant-camp">Tipo de pago:</h5>
-            <select class="campo" id="tipo-pago">
+
+            <div class="camp-div">
+                <h5 class="ant-camp">Ciudad de destino:</h5>
+                <select class="campo" id="ciudad">
+                    <option>Ciudad A</option>
+                    <option>Ciudad B</option>
+                    <option>Ciudad C</option>
+                    <option>Ciudad D</option>
+                </select>
+            </div>
+           
+            <div class="camp-div">
+                <h5 class="ant-camp">Numero de personas:</h5>
+                <input class="campo" type="number" placeholder="numero de personas" id="num-personas">
+            </div>
+
+            
+            <div class="camp-div">
+                <h5 class="ant-camp">Tipo de pago:</h5>
+                <select class="campo" id="tipo-pago">
                 <option>Efectivo</option>
                 <option>Tarjeta</option>
             </select>
+            </div>
+
+            
+
             <button type="button"  class="boton cal-res" onclick="cal()">Calcular reserva</button>
             <button   class="boton limpiar" id="limpiar">Limpiar</button>
         </form>

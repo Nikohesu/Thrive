@@ -1,8 +1,9 @@
 .flex {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: row wrap;
 
 }
 .div1{
+
 
 }
