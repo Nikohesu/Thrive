@@ -12,7 +12,7 @@
 
 }
 .esptar{
-    background: linear-gradient(#590c77,rgb(97, 4, 247));
+    background: linear-gradient(to right,#590c77,rgb(97, 4, 247));
 }
 .esptar-2{
     background: linear-gradient(#0c4c77,rgb(78, 104, 175));
@@ -32,8 +32,6 @@
     height: 30vw;
     box-shadow: 0 0 20px 1px black;
     margin-bottom: 10px;
-    max-width: 250px;
-    max-height: 250px;
 
 }
 
