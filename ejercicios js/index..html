@@ -15,50 +15,78 @@
         
 
         <form class="form f1">
-            <h4 class="sub-titulo sub-t1">Datos de la reserva</h4>
 
-            <div class="camp-div">
-                <h5 class="ant-camp">Ciudad de destino:</h5>
-                <select class="campo" id="ciudad">
-                    <option>Ciudad A</option>
-                    <option>Ciudad B</option>
-                    <option>Ciudad C</option>
-                    <option>Ciudad D</option>
+
+            <fieldset class="field-1">
+                <legend>Datos de reserva</legend>
+                <div class="camp-div camp-div-1">
+                    <label class="ant-camp">Ciudad de destino:</label>
+                    <select class="campo" id="ciudad">
+                        <option>Ciudad A</option>
+                        <option>Ciudad B</option>
+                        <option>Ciudad C</option>
+                        <option>Ciudad D</option>
+                    </select>
+                </div>
+            
+                <div class="camp-div camp-div-1">
+                    <label class="ant-camp">Numero de personas:</label>
+                    <input class="campo" type="number" placeholder="numero de personas" id="num-personas">
+                </div>
+
+                
+                <div class="camp-div camp-div-1">
+                    <label class="ant-camp">Tipo de pago:</label>
+                    <select class="campo" id="tipo-pago">
+                    <option>Efectivo</option>
+                    <option>Tarjeta</option>
                 </select>
-            </div>
-           
-            <div class="camp-div">
-                <h5 class="ant-camp">Numero de personas:</h5>
-                <input class="campo" type="number" placeholder="numero de personas" id="num-personas">
-            </div>
-
-            
-            <div class="camp-div">
-                <h5 class="ant-camp">Tipo de pago:</h5>
-                <select class="campo" id="tipo-pago">
-                <option>Efectivo</option>
-                <option>Tarjeta</option>
-            </select>
-            </div>
+                </div>
+                
+            </fieldset>
 
             
 
-            <button type="button"  class="boton cal-res" onclick="cal()">Calcular reserva</button>
-            <button   class="boton limpiar" id="limpiar">Limpiar</button>
-        </form>
 
-        <form class="form f2">
-            <h4 class="sub-titulo sub-t2">Resultados</h4>
-            <h5 class="ant-camp">Valor total:</h5>
-            <input type="text" class="campo" disabled id="valor-t">
-            <h5 class="ant-camp">Descuento:</h5>
-            <input class="campo" type="text" id="descuento" disabled>
-            <h5 class="ant-camp">Valor Neto a pagar:</h5>
-            <input type="text" class="campo" id="valor-n-p" disabled>
-    
+            
+            <div class="botones">
+                <button type="button"  class="boton cal-res" onclick="cal()">Calcular reserva</button>
+                <button   class="boton limpiar" id="limpiar">Limpiar</button> 
+            </div>
+
         </form>
 
 
+
+
+        <form class="form f1">
+
+
+            <fieldset class="field-2">
+                <legend>Resultados</legend>
+                <div class="camp-div camp-div-2">
+                    <label class="ant-camp">Valor total:</label>
+                    <input type="text" class="campo" disabled id="valor-t">
+                </div>
+            
+                <div class="camp-div camp-div-2">
+                    <label class="ant-camp">Descuento:</label>
+                    <input class="campo" type="text" id="descuento" disabled>
+                </div>
+
+                
+                <div class="camp-div camp-div-2">
+                    <label class="ant-camp">Valor Neto a pagar:</label>
+                    <input type="text" class="campo" id="valor-n-p" disabled>
+                </div>
+                
+            </fieldset>
+
+        </form>
+
+
+        
+        
     </div>
     
 </body>

@@ -1,0 +1,31 @@
+body {
+    background: grey;
+}
+.separador {
+    background: #636262;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
+
+.form {
+    background-color: #363636;
+    padding: 30px;
+}
+
+.campo {
+    display: block;
+    margin: auto;
+}
+.tit {
+   
+    font-size: clamp(220px,1.5vw);
+    
+
+
+}
+
+textarea{
+    resize: none;
+    
+}
