@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency-tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Recursos/Mario-64.ico">
+</head>
+<body>
+    <div class="for-rep" id="for-rep">
+        
+        <h2 class="pri-text">Agency tours - Sistema de reservas</h2>
+
+        
+
+        <form class="form f1">
+
+
+            <fieldset class="field-1">
+                <legend>Datos de reserva</legend>
+                <div class="camp-div camp-div-1">
+                    <label class="ant-camp">Ciudad de destino:</label>
+                    <select class="campo" id="ciudad">
+                        <option value="0">Ciudad A</option>
+                        <option value="1">Ciudad B</option>
+                        <option value="2">Ciudad C</option>
+                        <option value="3">Ciudad D</option>
+                    </select>
+                </div>
+            
+                <div class="camp-div camp-div-1">
+                    <label class="ant-camp">Numero de personas:</label>
+                    <input class="campo" type="number" placeholder="numero de personas" id="num-personas">
+                </div>
+
+                
+                <div class="camp-div camp-div-1">
+                    <label class="ant-camp">Tipo de pago:</label>
+                    <select class="campo" id="tipo-pago">
+                    <option>Efectivo</option>
+                    <option>Tarjeta</option>
+                </select>
+                </div>
+                
+            </fieldset>
+
+            
+
+
+            
+            <div class="botones">
+                <button type="button"  class="boton cal-res" onclick="cal()">Calcular reserva</button>
+                <button   class="boton limpiar" id="limpiar">Limpiar</button> 
+            </div>
+
+        </form>
+
+
+
+
+        <form class="form f1">
+
+
+            <fieldset class="field-2">
+                <legend>Resultados</legend>
+                <div class="camp-div camp-div-2">
+                    <label class="ant-camp">Valor total:</label>
+                    <input type="text" class="campo" disabled id="valor-t">
+                </div>
+            
+                <div class="camp-div camp-div-2">
+                    <label class="ant-camp">Descuento:</label>
+                    <input class="campo" type="text" id="descuento" disabled>
+                </div>
+
+                
+                <div class="camp-div camp-div-2">
+                    <label class="ant-camp">Valor Neto a pagar:</label>
+                    <input type="text" class="campo" id="valor-n-p" disabled>
+                </div>
+                
+            </fieldset>
+
+        </form>
+
+
+        
+        
+    </div>
+    
+</body>
+<script src="main.js"></script>
+</html>
