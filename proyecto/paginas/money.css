@@ -1,10 +1,11 @@
 @font-face {
     font-family: Pacifico;
-    src: url(../../Fonts/Pacifico.ttf);
+    src: url(../assets/Pacifico.ttf);
 }
 
 body {
     margin:0;
+ 
 }
 
 .link-p{
@@ -16,17 +17,13 @@ body {
 .link {
     text-decoration: none;
     color: black;
-
-    font-size: clamp(20px,2vw,80px);
-
+    flex: 1;
+    font-size: clamp(20px,2vw,25px);
 
     padding: 2px;
 
-@media (max-width:500px) {
-    .link{
-        text-align: center;
-    }
-}
+
+
 
 }
 
@@ -35,27 +32,24 @@ body {
    box-sizing: border-box;
    position: fixed;
    width: 100%;
-   top: 0;
+   
 }
 
 
 .logo {
-    min-width: 61px;
-    min-height: 46px;
-    width: 5.4vw;
-    height: 4vw;
+
+
+    width:61px;
+    height:46px;
     padding: 4px;
 }
-.logo-tip{
-    text-align: left;
-    display: inline-block;
-    
- 
-}
-.e-links {
 
-
+.nav-bar-left {
+    display: flex;
+    flex-direction: row;
 }
-.link-s {
-    display:inline-block
+
+.e-link{
+    display: flex;
+    flex-direction: row;
 }

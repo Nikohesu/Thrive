@@ -1,0 +1,50 @@
+@font-face {
+    font-family: League-spartan;
+    src: url(../fonts/League_Spartan/static/LeagueSpartan-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #faf7d8;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 100%;
+    align-items: center; /* Asegura que los elementos estén alineados verticalmente */
+}
+
+
+.img {
+    width: clamp(100px,60vh,300px);
+    height: auto;
+    padding: 10px;
+    
+}
+.link {
+    font-family: League-spartan;
+    text-decoration: none;
+    color :black;
+    font-size: clamp(20px,2vh,50px);
+}
+
+.e-link {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-e{
+    margin-left: auto; /* Empuja el contenido hacia el extremo derecho */
+    
+}
+
+.m-link{
+    
+    margin: 20px;
+    margin-top: 45px;
+    box-sizing: border-box;
+}
