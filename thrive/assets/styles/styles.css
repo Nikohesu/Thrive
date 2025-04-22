@@ -41,10 +41,6 @@ body {
  
 .hamburguesa-des{
     animation-name: apar-ham;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-play-state: paused;
-    animation-direction: reverse;
     display: none; 
 
 }
@@ -56,10 +52,6 @@ body {
     align-items: center;
     width: 100%;
     height: 0;
-    animation-name: apar-ham;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-play-state: paused;
 }
 
 .hamburguesa{
@@ -70,11 +62,6 @@ body {
     align-items: center;
     width: 100%;
     height: 0;
-    animation-name: apar-ham;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-direction: normal;
-    animation-play-state: paused;
 }
 
 
@@ -103,7 +90,15 @@ body {
     color :black;
     font-size: clamp(20px,2vh,50px);
 }
-
+.linea {
+    width:20px;
+    height: 3px;
+    background-color: black;
+    margin : 2px;
+    transition: all 0.5s ease;
+    transform-origin: right;
+    
+}
 
 
 
@@ -113,7 +108,10 @@ body {
     margin-top: 45px;
     box-sizing: border-box;
 }
-@media screen and (max-width: 1000px) {
+
+
+
+@media  screen and (max-width: 500px) {
     .nav-e-mil {
         display: none;
     }
@@ -123,9 +121,6 @@ body {
     .hamburguesa-act{
         display: flex;
     }
-    
-}
-@media  screen and (max-width: 500px) {
     .menu-hamburguesa{
         padding:20px;
     }
@@ -133,18 +128,4 @@ body {
         margin:auto;
     }
 
-}
-
-@keyframes apar-ham {
-    to{
-        height:250px;
-        opacity: 100%;
-
-    }
-
-    from {
-        height: 0;
-        opacity: 0;
-
-    }
 }

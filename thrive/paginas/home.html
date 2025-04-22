@@ -17,7 +17,15 @@
             </div>
             <div class="nav-e">
                 <div class="menu-hamburguesa">
-                    <Button class="boton-menu" onclick="cam_class()">☰</Button>
+                    <button id="hamburguesa" class="hamburguesa" onclick="open_close_burger()">
+                        <div class="linea">
+                        </div>
+            
+                        <div class="linea">
+                        </div>
+                        <div class="linea">
+                        </div>
+                    </button>
                 </div>
                 <div class="nav-e-mil">
 
@@ -67,26 +75,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
     <script>
-        function cam_class () {
-            let objeto = document.getElementById("hamburguesa");
-            let estilo = document.querySelector(".hamburguesa");
-            display = getComputedStyle(objeto).display;
-            display === "none" ? animation_n() : animation_r();
-            function animation_n () {
-                estilo.style.display = "flex"
-                estilo.style.animationDirection = "normal";
-                estilo.style.animationPlayState = "running";
-            }
-            function animation_r(){
-                estilo.style.animationDirection = "reverse";
-                estilo.style.animationDuration= "2s";
-                estilo.style.animationPlayState = "running";
-                objeto.addEventListener("animationend", () => {
-                display === "none" ? null : estilo.style.display  = "none";
-            
-            })
-
-            }
+        function open_close_burger () {
+            let menu = document.getElementById("menu-h");
+            let hamburguesa = document.getElementById("hamburguesa");
+            menu.classList.toggle("active-menu-h");
+            hamburguesa.classList.toggle("active-h");
 
 
             /*
