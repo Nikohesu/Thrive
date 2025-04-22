@@ -75,3 +75,28 @@ form-floating {
 body {
   background-color: aquamarine;
 }
+
+.nav{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.nav-bar{
+  display:flex;
+  flex-direction: row;
+  background-color: #CEF4A9;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-logo{
+  padding:10px;
+  height: clamp(40px,3vw,150px);
+  width: auto;
+}
+.icon {
+  width:clamp(30px,5vw,40px);
+  height: auto;
+  box-sizing: border-box;
+  padding: 5px;
+}
